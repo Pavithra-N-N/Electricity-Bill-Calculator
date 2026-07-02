@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>⚡ Electricity Bill Calculator</h1>
+
+    <p class="subtitle">
+        Calculate your electricity bill instantly
+    </p>
+
+    <div class="input-box">
+
+        <label>👤 Customer Name</label>
+
+        <input
+            type="text"
+            id="customer"
+            placeholder="Enter Customer Name">
+
+    </div>
+
+    <div class="input-box">
+
+        <label>🔢 Units Consumed</label>
+
+        <input
+            type="number"
+            id="units"
+            placeholder="Enter Units">
+
+    </div>
+
+    <div class="buttons">
+
+        <button onclick="calculateBill()">
+            Calculate Bill
+        </button>
+
+        <button class="reset" onclick="resetForm()">
+            Reset
+        </button>
+
+    </div>
+
+    <div id="billResult">
+
+        <h2>Your Bill Details</h2>
+
+        <p>Fill the details and click "Calculate Bill".</p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
